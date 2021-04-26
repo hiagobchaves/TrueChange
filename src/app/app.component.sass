@@ -1,0 +1,160 @@
+@use 'variables'
+@use 'mixins'
+    
+*
+    font-family: 'Rubik'
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @include mixins.container
+
+    @include mixins.mobile
+        padding: 1.1rem
+
+    &-logo
+        width: 100%
+        max-width: 172px
+        max-height: 46px
+    
+    &-navbar
+        button
+            font-size: 16px
+            line-height: 19px
+            font-weight: 400
+            padding: .5rem 2rem
+            border: none
+            background: none
+            color: variables.$primary-color
+
+.body-content
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @include mixins.container
+    padding: 0 0 5rem 0
+
+    &-col-text
+        width: 555px
+        height: 140px
+
+    &-title
+        max-width: 555px
+        p
+            color: #0B132A
+            font-family: Rubik
+            font-style: normal
+            font-weight: 500
+            font-size: 50px
+            line-height: 70px
+
+        span
+            font-weight: 700
+    
+    &-description
+        max-width: 555px
+
+        p
+            font-size: 16px
+            font-weight: 400
+            line-height: 30px
+            color: #4F5665
+
+        span
+            font-weight: 700
+
+    &-button
+        padding-top: 4rem
+        button
+            width: 250px
+            height: 60px
+            background: #F53838
+            border-radius: 10px
+            font-weight: bold
+            font-size: 16px
+            line-height: 25px
+            color: #FFFFFF
+            border: none
+            box-shadow: 0px 9px 12px rgb(245 56 56 / 35%)
+
+.session-user
+    display: flex
+    justify-content: center
+    align-items: center
+    @include mixins.container
+    max-width: 1140px
+
+
+.session-card
+    background: #FFF
+    box-shadow: 1em 1em 1em 1em #f1f1f2
+    display: flex
+    width: 100%
+    justify-content: space-around
+    padding: 1.5rem
+    max-width: 1093px
+    border-radius: .5rem
+
+.session-row
+    display: flex
+    align-items: center
+
+.session-col-text
+    padding-left: 1.5rem
+    display: flex
+    flex-direction: column
+    height: 100%
+    justify-content: space-evenly
+
+    p
+        font-family: Rubik
+        font-style: normal
+        font-weight: bold
+        font-size: 25px
+        line-height: 30px
+        color: #0B132A
+    
+    span
+        font-family: Rubik
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 30px
+        color: #4F5665
+
+.border-grey
+    border: 1px solid #EEEFF2
+
+.session-icons
+    width: 100%
+    max-width: 40px
+
+
+.session-feature-title
+    max-width: 383.41px
+    p
+        font-family: Rubik
+        font-style: normal
+        font-weight: 500
+        font-size: 35px
+        line-height: 50px
+        color: #0B132A
+
+.session-feature-description
+        max-width: 427.88px
+        p
+            font-size: 16px
+            font-weight: 400
+            line-height: 30px
+            color: #4F5665
+
+    
+.ilustration-one
+    width: 100%
+    max-width: 611.24px
+    max-height: 382.33px
