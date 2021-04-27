@@ -1,0 +1,71 @@
+@use 'variables'
+@use 'mixins'
+
+.session-subscribe-text
+    padding-left: 1.5rem
+    display: flex
+    flex-direction: column
+    height: 100%
+    justify-content: space-evenly
+  
+
+    p
+        font-family: Rubik
+        font-style: normal
+        font-weight: 500
+        font-size: 35px
+        line-height: 45px
+        color: #0B132A
+        max-width: 371.61px
+
+    
+    span
+        color: #4F5665
+        font-family: Rubik
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 30px
+        max-width: 410px
+
+.session-subscribe-card
+    background: #FFF
+    box-shadow: 1em 1em 1em 1em #f1f1f2
+    display: flex
+    width: 100%
+    justify-content: space-around
+    padding: 1.5rem
+    max-width: 1093px
+    border-radius: .5rem
+
+.session-subscribe-button
+    button
+        width: 250px
+        height: 60px
+        background: #F53838
+        border-radius: 10px
+        font-weight: bold
+        font-size: 16px
+        line-height: 25px
+        color: #FFFFFF
+        border: none
+        box-shadow: 0px 9px 12px rgb(245 56 56 / 35%)
+
+    input
+        width: 318px
+        height: 60px
+        background: #FFFFFF
+        border: 1px solid #000000
+        box-sizing: border-box
+        border-radius: 10px
+        margin-right: .5rem
+    
+
+
+.session-subscribe
+    display: flex
+    justify-content: center
+    align-items: center
+    @include mixins.container
+    max-width: 1140px
+    padding-bottom: 7rem

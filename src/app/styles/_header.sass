@@ -1,0 +1,26 @@
+@use 'variables'
+@use 'mixins'
+
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @include mixins.container
+
+    @include mixins.mobile
+        padding: 1.1rem
+
+    &-logo
+        width: 100%
+        max-width: 172px
+        max-height: 46px
+    
+    &-navbar
+        button
+            font-size: 16px
+            line-height: 19px
+            font-weight: 400
+            padding: .5rem 2rem
+            border: none
+            background: none
+            color: variables.$primary-color

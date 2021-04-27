@@ -1,0 +1,57 @@
+@use 'variables'
+@use 'mixins'
+
+.body-content
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @include mixins.container
+    padding: 0 0 5rem 0
+
+    &-col-text
+        width: 555px
+        height: 140px
+
+    &-title
+        max-width: 555px
+        p
+            color: #0B132A
+            font-family: Rubik
+            font-style: normal
+            font-weight: 500
+            font-size: 50px
+            line-height: 70px
+
+        span
+            font-weight: 700
+    
+    &-description
+        max-width: 555px
+
+        p
+            font-size: 16px
+            font-weight: 400
+            line-height: 30px
+            color: #4F5665
+
+        span
+            font-weight: 700
+
+    &-button
+        padding-top: 4rem
+        button
+            width: 250px
+            height: 60px
+            background: #F53838
+            border-radius: 10px
+            font-weight: bold
+            font-size: 16px
+            line-height: 25px
+            color: #FFFFFF
+            border: none
+            box-shadow: 0px 9px 12px rgb(245 56 56 / 35%)
+
+.ilustration-one
+    width: 100%
+    max-width: 611.24px
+    max-height: 382.33px

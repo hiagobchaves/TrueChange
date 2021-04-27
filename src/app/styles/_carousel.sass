@@ -1,0 +1,72 @@
+@use 'variables'
+@use 'mixins'
+
+.session-blog
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @include mixins.container
+    padding: 0 0 5rem 0
+    max-width: 1290px
+    flex-direction: column
+    background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0) 88.56%)
+
+    &-titulo
+        padding-bottom: 2rem
+        p
+            font-family: Rubik
+            font-style: normal
+            font-weight: 500
+            font-size: 35px
+            line-height: 50px
+            text-align: center
+            color: #0B132A
+
+.session-blog-list
+    display: flex
+    width: 100%
+    justify-content: space-between
+    padding-bottom: 2rem
+    
+.session-blog-card
+    background: #FFFFFF
+    border: 2px solid black
+    box-sizing: border-box
+    border-radius: 10px
+    width: 400px
+    height: 208px
+    display: flex
+    padding: 2rem
+
+.session-blog-text
+    display: flex
+    align-items: flex-start
+    flex-direction: column
+    justify-content: center
+    padding-left: 1.5rem
+
+    p
+        color: #0B132A
+        font-style: normal
+        font-weight: 500
+        font-size: 18px
+        line-height: 30px
+        width: 87px
+        height: 30px
+
+    span
+        font-family: Rubik
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 30px
+        display: flex
+        align-items: center
+        color: #0B132A
+        width: 223px
+        height: 100px
+
+.session-blog-buttons
+    display: flex
+    width: 100%
+    justify-content: space-between
