@@ -7,6 +7,17 @@
             <button>Career</button>
             <button>Contact</button>
         </nav>
+        <nav class="header-navbar-menu">
+              <div ngbDropdown class="d-inline-block">
+                    <img id="dropdownBasic1" src="../assets/icons/menu.svg" class="header-menu" ngbDropdownToggle>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                  <button ngbDropdownItem>Home</button>
+                  <button ngbDropdownItem>Blog</button>
+                  <button ngbDropdownItem>Career</button>
+                  <button ngbDropdownItem>Contact</button>
+                </div>
+               </div>
+        </nav>
     </header>
     <div class="body-content">
         <div class="body-col-text">
@@ -55,7 +66,7 @@
 
     <div class="session-feature body-content">
         <div class="body-col-img">
-            <img src="../assets/image/Illustration 2.svg" class="ilustration-one">
+            <img src="../assets/image/Illustration 2.svg" class="ilustration-second">
         </div>
         <div class="body-col-text">
             <div class="session-feature-title">
@@ -90,30 +101,28 @@
             <p>Blog</p>
         </div>
 
-        <div row class="session-blog-list">
-            <div class="session-blog-card">
+        <div row class="session-blog-list" id="caroselSite" data-ride="carousel">
+            <div class="session-blog-card carousel-item" id="item1">
                 <div class="session-row">
-                    <img src="../assets/image/image-place.svg" alt="">
+                    <img src="../assets/image/image-place.svg">
                 </div>
                 <div class="session-blog-text">
                     <p>News title</p>
                     <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 </div>
             </div>
-
-            <div class="session-blog-card">
+            <div class="session-blog-card carousel-item" id="item2">
                 <div class="session-row">
-                    <img src="../assets/image/image-place.svg" alt="">
+                    <img src="../assets/image/image-place.svg">
                 </div>
                 <div class="session-blog-text">
                     <p>News title</p>
                     <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
                 </div>
             </div>
-
-            <div class="session-blog-card">
+            <div class="session-blog-card carousel-item" id="item3">
                 <div class="session-row">
-                    <img src="../assets/image/image-place.svg" alt="">
+                    <img src="../assets/image/image-place.svg">
                 </div>
                 <div class="session-blog-text">
                     <p>News title</p>
@@ -122,42 +131,18 @@
             </div>
         </div>
         <div row class="session-blog-buttons">
-            <p>pontinhos</p>
-            <p>setas</p>
+            <div class="session-blog-dots">
+                <img src="../assets/image/Union.png">
+                <img src="../assets/image/Ellipse 173.png" style="padding-left: 10px;">
+                <img src="../assets/image/Ellipse 173.png" style="padding-left: 10px;">
+                <img src="../assets/image/Ellipse 173.png" style="padding-left: 10px;">
+            </div>
+            <div class="session-blog-buttons-arrow">
+            <button class="session-blog-buttonLeft"><img src="../assets/image/setaLeft.png"></button>
+            <button class="session-blog-buttonRight"><img src="../assets/image/setaRight.png"></button>
+            </div>
         </div>
     </div>
-
-    <!-- <div class="slide body-content">
-        <ngb-carousel *ngIf="images">
-            <ng-template ngbSlide>
-              <div class="picsum-img-wrapper">
-                <img [src]="images[0]" alt="Random first slide">
-              </div>
-              <div class="carousel-caption">
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-              </div>
-            </ng-template>
-            <ng-template ngbSlide>
-              <div class="picsum-img-wrapper">
-                <img [src]="images[1]" alt="Random second slide">
-              </div>
-              <div class="carousel-caption">
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </ng-template>
-            <ng-template ngbSlide>
-              <div class="picsum-img-wrapper">
-                <img [src]="images[2]" alt="Random third slide">
-              </div>
-              <div class="carousel-caption">
-                <h3>Third slide label</h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-              </div>
-            </ng-template>
-          </ngb-carousel>
-      </div> -->
 
       <div class="session-subscribe">
         <div class="session-subscribe-card">
@@ -167,7 +152,7 @@
                     <span>Let's subscribe with us and find the fun.</span>
                 </div>
             </div>
-            <div class="session-row">
+            <div class="session-subscribe-row">
                     <div class="session-subscribe-button">
                         <input type="text"> 
                         <button>Subscribe Now</button>
@@ -181,9 +166,13 @@
             <img src="../assets/image/logo.svg" class="header-logo">
         </div>
         <div class="footer-socialmedia">
-            <img src="../assets/icons/facebook.svg" >
-            <img src="../assets/icons/twitter.svg" >
-            <img src="../assets/icons/instagram.svg" >
+            <a class="facebook" href="https://www.facebook.com/somostruechange/">
+                <img src="../assets/image/Facebook.png">
+            </a>
+            <img src="../assets/image/Twitter.png">
+            <a class="instagram" href="https://www.instagram.com/somostruechange/">
+                <img src="../assets/image/Instagram.png">
+            </a>
         </div>
         <div class="footer-text">
             <p>©2020trechange</p>

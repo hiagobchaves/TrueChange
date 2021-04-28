@@ -8,6 +8,10 @@
     @include mixins.container
     max-width: 1140px
 
+    @include mixins.mobile
+        max-width: 414px
+        padding: 1.1rem
+
 
 .session-card
     background: #FFF
@@ -19,9 +23,16 @@
     max-width: 1093px
     border-radius: .5rem
 
+    @include mixins.mobile
+        flex-direction: column
+        height: 373px
+
 .session-row
     display: flex
     align-items: center
+
+    @include mixins.mobile
+        justify-content: center
 
 .session-col-text
     padding-left: 1.5rem
@@ -36,7 +47,7 @@
         font-weight: bold
         font-size: 25px
         line-height: 30px
-        color: #0B132A
+        color: variables.$dark-grey
     
     span
         font-family: Rubik
@@ -44,7 +55,7 @@
         font-weight: normal
         font-size: 20px
         line-height: 30px
-        color: #4F5665
+        color: variables.$medium-grey
 
 .border-grey
     border: 1px solid #EEEFF2

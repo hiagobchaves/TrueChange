@@ -2,11 +2,21 @@
 @use 'mixins'
 
 .body-content
+
+
     display: flex
     justify-content: space-between
     align-items: center
     @include mixins.container
     padding: 0 0 5rem 0
+
+    @include mixins.tablet
+        max-width: 660px
+
+    @include mixins.mobile
+        padding: 1.1rem
+
+    
 
     &-col-text
         width: 555px
@@ -14,13 +24,18 @@
 
     &-title
         max-width: 555px
+
         p
-            color: #0B132A
+            color: variables.$dark-grey
             font-family: Rubik
             font-style: normal
             font-weight: 500
             font-size: 50px
             line-height: 70px
+
+            @include mixins.mobile
+                font-size: 37px
+                line-height: 45px
 
         span
             font-weight: 700
@@ -32,7 +47,11 @@
             font-size: 16px
             font-weight: 400
             line-height: 30px
-            color: #4F5665
+            color: variables.$medium-grey
+
+            @include mixins.mobile
+                font-size: 16px
+                line-height: 26px
 
         span
             font-weight: 700
@@ -42,7 +61,7 @@
         button
             width: 250px
             height: 60px
-            background: #F53838
+            background: variables.$button-primary
             border-radius: 10px
             font-weight: bold
             font-size: 16px
@@ -52,6 +71,15 @@
             box-shadow: 0px 9px 12px rgb(245 56 56 / 35%)
 
 .ilustration-one
+    width: 100%
+    max-width: 611.24px
+    max-height: 382.33px
+
+    @include mixins.mobile
+        display: none
+
+
+.ilustration-second
     width: 100%
     max-width: 611.24px
     max-height: 382.33px

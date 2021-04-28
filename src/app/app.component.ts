@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'trueChange-Challenge';
 
-  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
+  blogs: any[] = [
+    { foto: '../assets/image/image-place.svg', titulo: 'News Title', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'},
+    { foto: '../assets/image/image-place.svg', titulo: 'News Title', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'},
+    { foto: '../assets/image/image-place.svg', titulo: 'News Title', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'},
+  ]
+
 }
